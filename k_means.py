@@ -33,3 +33,4 @@ def kMeans():
     plt.ylabel('Age')
     plt.scatter(data[:,0], data[:,1], c=model.labels_.astype(float))
     plt.show()
+    print('\n Basically 5 clusters to iterate data in grouping')

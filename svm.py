@@ -40,8 +40,10 @@ def support_vector_machines():
     plt.show()
 
     # Print prediction model of 2 cluster found in which group
-    print(' \n Prediction of 2 cluster found in which group'
+    print(' \n Prediction of 2 person found in which group'
             '\n Here Groups are namely: [0] ,[1] ,[2] ,[3] ,[4]')
+    print('\n Person of income: 200000 & age: 40')
     print(clf.predict([[200000, 40]]))
+    print('\n Person of income: 50000 & age: 65')
     print(clf.predict([[50000, 65]]))
     print('')

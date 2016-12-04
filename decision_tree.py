@@ -46,8 +46,10 @@ def dTree():
     print(' \n 1 means Hired'
             '\n 0 means Not Hired'
             '\n Here are the two test candidates\'s results')
-    #Predict employment of an employed 10-year veteran
+    #Predict employment of an employed 10-year 
+    print(' \n Employed 10-year\'s result ')
     print(clf.predict([[10, 1, 4, 0, 0, 0]]))
-    #...and an unemployed 10-year veteran
+    #...and an unemployed 10-year 
+    print(' \n Unemployed 10-year\'s result ')
     print (clf.predict([[10, 0, 4, 0, 0, 0]]))
     print('')

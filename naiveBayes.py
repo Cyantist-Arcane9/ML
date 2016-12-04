@@ -1,6 +1,5 @@
 import os
 import io
-import numpy
 from pandas import DataFrame
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -50,8 +49,9 @@ def nBayes():
     classifier.fit(counts, targets)
 
     # Testing out email to get result
-    examples = ['Demonitization Rocks!!!', "Hi Ashish, how about your thoughts on this?"]
+    examples = ['Demonitization Rocks!!!', "Free Money Now!!"]
     example_counts = vectorizer.transform(examples)
     predictions = classifier.predict(example_counts)
+    print(' Emails: Demonitization Rocks!!! ,Free Money Now!! \n Results:')
     print(predictions)
     print('')
