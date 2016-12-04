@@ -43,7 +43,11 @@ def dTree():
     # 1 means hired and 0 means not hired
     clf = RandomForestClassifier(n_estimators=10)
     clf = clf.fit(X, y)
+    print(' \n 1 means Hired'
+            '\n 0 means Not Hired'
+            '\n Here are the two test candidates\'s results')
     #Predict employment of an employed 10-year veteran
     print(clf.predict([[10, 1, 4, 0, 0, 0]]))
     #...and an unemployed 10-year veteran
     print (clf.predict([[10, 0, 4, 0, 0, 0]]))
+    print('')
